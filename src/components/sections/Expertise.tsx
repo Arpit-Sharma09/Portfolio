@@ -117,7 +117,7 @@ export default function Expertise() {
                   alt={item.title}
                   fill
                   unoptimized
-                  className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 opacity-25 group-hover:opacity-80"
+                  className="object-cover grayscale-0 md:grayscale md:group-hover:grayscale-0 transition-all duration-1000 opacity-60 md:opacity-25 md:group-hover:opacity-80"
                 />
               </div>
               

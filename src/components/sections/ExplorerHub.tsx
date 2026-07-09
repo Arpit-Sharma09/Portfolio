@@ -231,7 +231,7 @@ export default function ExplorerHub() {
                     alt={card.title}
                     fill
                     unoptimized
-                    className="object-cover grayscale group-hover:grayscale-0 transition-all duration-1000 scale-110 group-hover:scale-100 opacity-50 group-hover:opacity-75"
+                    className="object-cover grayscale-0 md:grayscale md:group-hover:grayscale-0 transition-all duration-1000 scale-100 md:scale-110 md:group-hover:scale-100 opacity-70 md:opacity-50 md:group-hover:opacity-75"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-midnight via-midnight/20 to-transparent group-hover:via-midnight/40 transition-all" />
                   

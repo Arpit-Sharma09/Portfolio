@@ -129,7 +129,7 @@ export default function Projects() {
             className="project-slide shrink-0 w-full md:w-[65vw] h-auto md:h-[70vh] bg-midnight/35 hover:bg-midnight/55 rounded-3xl p-6 sm:p-10 md:p-16 relative overflow-hidden group border border-white/5 shadow-2xl transition-colors duration-700 ease-out"
           >
             {/* Background Decoration */}
-            <div className="absolute top-0 right-0 w-full md:w-1/2 h-full opacity-35 md:opacity-30 group-hover:opacity-85 transition-all duration-1000 pointer-events-none">
+            <div className="absolute top-0 right-0 w-full md:w-1/2 h-full opacity-65 md:opacity-30 md:group-hover:opacity-85 transition-all duration-1000 pointer-events-none">
               <Image
                 src={project.img}
                 alt={project.title}
@@ -139,7 +139,7 @@ export default function Projects() {
               />
               {/* Gradient overlay to guarantee absolute text legibility */}
               <div className="absolute inset-0 bg-gradient-to-r from-midnight via-midnight/60 to-transparent md:block hidden" />
-              <div className="absolute inset-0 bg-midnight/75 md:hidden block" />
+              <div className="absolute inset-0 bg-midnight/55 md:hidden block" />
             </div>
 
             <div className="relative z-10 h-full flex flex-col justify-between gap-12 md:gap-0">

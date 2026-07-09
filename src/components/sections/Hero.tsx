@@ -119,7 +119,7 @@ export default function Hero() {
         <div className="relative z-10 text-center px-6 w-full">
           <div
             ref={hudRef}
-            className="relative inline-block p-10 md:p-20 bg-white/[0.02] border border-white/10 rounded-3xl hero-fade-out shadow-2xl"
+            className="relative inline-block p-5 sm:p-10 md:p-20 bg-white/[0.02] border border-white/10 rounded-3xl hero-fade-out shadow-2xl w-full max-w-[90vw] sm:max-w-none sm:w-auto"
           >
             <div className="hud-corner corner-tl opacity-40" />
             <div className="hud-corner corner-tr opacity-40" />
@@ -127,11 +127,11 @@ export default function Hero() {
             <div className="hud-corner corner-br opacity-40" />
             <div ref={scanlineRef} className="scanline opacity-5" />
 
-            <div className="flex flex-col items-center gap-6">
+            <div className="flex flex-col items-center gap-5 sm:gap-6">
               {/* Status pill */}
-              <span className="hero-reveal inline-flex items-center gap-3 bg-white/5 border border-white/10 rounded-full px-5 py-2">
-                <span className="w-1.5 h-1.5 rounded-full bg-cyan-glint animate-pulse" />
-                <span className="text-white/80 font-mono text-[10px] tracking-[0.3em] uppercase">
+              <span className="hero-reveal inline-flex items-center gap-2 sm:gap-3 bg-white/5 border border-white/10 rounded-full px-3 sm:px-5 py-2 max-w-full">
+                <span className="w-1.5 h-1.5 rounded-full bg-cyan-glint animate-pulse shrink-0" />
+                <span className="text-white/80 font-mono text-[8px] sm:text-[10px] tracking-[0.1em] sm:tracking-[0.3em] uppercase text-center">
                   Available for Opportunities / Relocation
                 </span>
               </span>
@@ -139,26 +139,26 @@ export default function Hero() {
               {/* Name */}
               <div ref={nameScrollRef} className="w-full text-center">
                 <h1
-                  className="hero-reveal font-space text-[12vw] sm:text-[9vw] md:text-[8vw] font-black leading-none tracking-tighter text-white uppercase whitespace-nowrap text-glow-cyan"
+                  className="hero-reveal font-space text-[10vw] sm:text-[9vw] md:text-[8vw] font-black leading-none tracking-tighter text-white uppercase sm:whitespace-nowrap text-glow-cyan"
                 >
                   ARPIT SHARMA
                 </h1>
               </div>
 
               {/* Typewriter role */}
-              <div className="hero-reveal font-mono text-sm md:text-base text-[#00D6FF] tracking-[0.4em] uppercase h-6 flex items-center glow-cyan">
+              <div className="hero-reveal font-mono text-xs sm:text-sm md:text-base text-[#00D6FF] tracking-[0.2em] sm:tracking-[0.4em] uppercase h-6 flex items-center glow-cyan">
                 <span className="mr-2">&gt;</span>
                 <span>{displayed}</span>
                 <span className="w-[2px] h-4 bg-cyan-glint ml-1 animate-pulse" />
               </div>
 
               {/* Divider */}
-              <div className="hero-reveal flex items-center gap-6">
-                <div className="w-16 h-[1px] bg-gradient-to-r from-transparent to-[#00D6FF] shrink-0" />
-                <span className="text-white/80 font-mono text-[10px] tracking-widest uppercase">
+              <div className="hero-reveal flex items-center gap-3 sm:gap-6">
+                <div className="w-16 h-[1px] bg-gradient-to-r from-transparent to-[#00D6FF] shrink-0 hidden sm:block" />
+                <span className="text-white/80 font-mono text-[8px] sm:text-[10px] tracking-wider sm:tracking-widest uppercase text-center">
                   AWS & Cybersecurity Specialized
                 </span>
-                <div className="w-16 h-[1px] bg-gradient-to-l from-transparent to-[#00D6FF] shrink-0" />
+                <div className="w-16 h-[1px] bg-gradient-to-l from-transparent to-[#00D6FF] shrink-0 hidden sm:block" />
               </div>
             </div>
           </div>

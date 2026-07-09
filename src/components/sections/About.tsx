@@ -16,7 +16,7 @@ const skillGroups = [
       { name: "Responsive UI", status: "92%" },
     ],
     icon: "🎨",
-    span: "col-span-2",
+    span: "md:col-span-2 col-span-1",
   },
   {
     title: "Backend Development",
@@ -28,7 +28,7 @@ const skillGroups = [
       { name: "JWT Auth", status: "85%" },
     ],
     icon: "⚙️",
-    span: "col-span-1",
+    span: "md:col-span-1 col-span-1",
   },
   {
     title: "Cloud & DevOps",
@@ -40,7 +40,7 @@ const skillGroups = [
       { name: "CI/CD Pipelines", status: "78%" },
     ],
     icon: "☁️",
-    span: "col-span-1",
+    span: "md:col-span-1 col-span-1",
   },
   {
     title: "IT Support & Security",
@@ -52,7 +52,7 @@ const skillGroups = [
       { name: "Troubleshooting", status: "95%" },
     ],
     icon: "🛡️",
-    span: "col-span-2",
+    span: "md:col-span-2 col-span-1",
   },
 ];
 

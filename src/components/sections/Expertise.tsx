@@ -83,7 +83,7 @@ export default function Expertise() {
                 Core Competencies
               </span>
             </div>
-            <h2 className="font-space text-5xl md:text-8xl font-black tracking-tighter mb-8 uppercase leading-[0.85]">
+            <h2 className="font-space text-4xl sm:text-5xl md:text-8xl font-black tracking-tighter mb-8 uppercase leading-[0.85]">
               TECHNICAL<br />
               <span className="text-transparent text-stroke text-white/30">EXPERTISE.</span>
             </h2>
@@ -104,11 +104,11 @@ export default function Expertise() {
           </div>
         </div>
 
-        <div className="flex flex-col md:flex-row gap-6 h-[1700px] md:h-[650px] w-full">
+        <div className="flex flex-col md:flex-row gap-6 h-auto md:h-[650px] w-full">
           {expertise.map((item, i) => (
             <div 
               key={i}
-              className="expertise-banner flex-1 relative overflow-hidden rounded-3xl cursor-pointer group transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] hover:flex-[3.5] border border-white/5 hover:border-cyan-glint/30 shadow-2xl bg-midnight/35 hover:bg-midnight/55"
+              className="expertise-banner flex-1 min-h-[420px] md:min-h-0 relative overflow-hidden rounded-3xl cursor-pointer group transition-all duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] hover:flex-[3.5] border border-white/5 hover:border-cyan-glint/30 shadow-2xl bg-midnight/35 hover:bg-midnight/55"
             >
               {/* Image Container with Parallax-like scale */}
               <div className="absolute inset-0 transition-transform duration-1000 group-hover:scale-110">

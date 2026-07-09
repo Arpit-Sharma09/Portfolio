@@ -35,7 +35,7 @@ export default function SmoothScroll({ children }: { children: React.ReactNode }
           window.history.pushState(null, "", " ");
           return;
         }
-        const targetElement = document.querySelector(hash);
+        const targetElement = document.querySelector(hash) as HTMLElement | null;
         if (targetElement) {
           e.preventDefault();
           lenis.scrollTo(targetElement, { offset: 0, duration: 1.2 });
